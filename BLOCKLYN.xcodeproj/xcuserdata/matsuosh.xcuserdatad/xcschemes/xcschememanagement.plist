@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ContentBlocker.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>A85B89611BB1B9B20045EDF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A85B89771BB1B9C40045EDF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
