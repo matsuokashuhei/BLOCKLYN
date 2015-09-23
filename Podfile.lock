@@ -1,0 +1,10 @@
+PODS:
+  - SABlurImageView (2.0.0)
+
+DEPENDENCIES:
+  - SABlurImageView
+
+SPEC CHECKSUMS:
+  SABlurImageView: 16636ea067f5d1f9a963e3b4a4f1476f19714e20
+
+COCOAPODS: 0.38.2
