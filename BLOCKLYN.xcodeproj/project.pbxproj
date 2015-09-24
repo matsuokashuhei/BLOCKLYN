@@ -644,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 292AA7ACE23AAA37FA3B51F3 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -655,6 +656,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c51cf0bf-8ef7-4608-b555-b4af86e509d6";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -662,6 +664,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18A976BEA480767B4BB8D445 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -673,6 +676,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "c51cf0bf-8ef7-4608-b555-b4af86e509d6";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -727,7 +731,7 @@
 		A85B89831BB1B9C40045EDF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = arm64;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = ContentBlocker/Info.plist;
@@ -736,14 +740,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
 		A85B89841BB1B9C40045EDF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = arm64;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = ContentBlocker/Info.plist;
@@ -753,7 +757,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
