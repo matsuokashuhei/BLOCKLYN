@@ -129,7 +129,6 @@ class RulesViewController: UIViewController {
 extension RulesViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(rules.count)
         if searchController.active {
             return searchReults.count
         } else {
