@@ -646,7 +646,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BLOCKLYN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -654,7 +654,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.matsuosh.BLOCKLYN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c51cf0bf-8ef7-4608-b555-b4af86e509d6";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = arm64;
 			};
@@ -666,7 +666,7 @@
 			buildSettings = {
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BLOCKLYN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -674,7 +674,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.matsuosh.BLOCKLYN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c51cf0bf-8ef7-4608-b555-b4af86e509d6";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = arm64;
 			};
@@ -732,8 +732,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ContentBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.matsuosh.BLOCKLYN.ContentBlocker;
@@ -748,8 +748,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Shuhei Matsuoka";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ContentBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;

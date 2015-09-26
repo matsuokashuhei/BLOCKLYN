@@ -8,13 +8,26 @@
 
 import UIKit
 
+import SABlurImageView
+
 class AboutViewController: UIViewController {
+
+    /*
+    @IBOutlet weak var backgroundImageView: SABlurImageView! {
+        didSet {
+            backgroundImageView.addBlurEffect(25)
+        }
+    }
+    */
+
+    @IBOutlet weak var backgroundBlurView: UIVisualEffectView!
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.tableFooterView = UIView(frame: CGRectZero)
+            tableView.separatorEffect = UIVibrancyEffect(forBlurEffect: backgroundBlurView.effect as! UIBlurEffect)
         }
     }
 
@@ -65,6 +78,7 @@ extension AboutViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             break
         }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
 }

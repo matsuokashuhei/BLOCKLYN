@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         SFContentBlockerManager.reloadContentBlockerWithIdentifier("org.matsuosh.BLOCKLYN.ContentBlocker") { (error) -> Void in
             if let error = error {
-                print(error.localizedDescription)
+                print("SFContentBlockerManager.reloadContentBlockerWithIdentifier \(error.localizedDescription)")
             }
         }
     }
