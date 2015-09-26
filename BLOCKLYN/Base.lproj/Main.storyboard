@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AvenirNext.ttc">
@@ -31,62 +30,70 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLOCKLYN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bG-Lt-mjH">
-                                <rect key="frame" x="20" y="28" width="560" height="164"/>
+                                <rect key="frame" x="20" y="28" width="560" height="139"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="50"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3p-eb-flC">
-                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZIw-vF-xtD">
+                                <rect key="frame" x="200" y="175" width="200" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3p-eb-flC">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="aVs-Iq-AWP"/>
+                                            <constraint firstAttribute="width" constant="200" id="vU5-pC-rQL"/>
+                                        </constraints>
+                                        <state key="normal" image="settings"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f3-1y-S5b">
+                                        <rect key="frame" x="84" y="208" width="33" height="42"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Blb-42-b98"/>
-                                    <constraint firstAttribute="height" constant="200" id="EGF-wN-sTA"/>
+                                    <constraint firstAttribute="width" constant="200" id="RcM-1G-OTb"/>
+                                    <constraint firstAttribute="height" constant="250" id="dEn-sI-ZAL"/>
                                 </constraints>
-                                <state key="normal" image="settings"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Settings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f3-1y-S5b">
-                                <rect key="frame" x="20" y="408" width="560" height="57"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="894-RN-sZw">
                                 <rect key="frame" x="544" y="544" width="36" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="JMx-cu-9mB"/>
-                                    <constraint firstAttribute="height" constant="36" id="Nb9-4Q-MCv"/>
+                                    <constraint firstAttribute="width" constant="36" id="2iP-ew-8y0"/>
+                                    <constraint firstAttribute="height" constant="36" id="U9s-8N-k2i"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Settings &gt; Safari &gt; Content Blockers Allow BLOCKLYN in the list of Content Blockers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noi-ZB-5Lb">
-                                <rect key="frame" x="20" y="465" width="560" height="71"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings &gt; Safari &gt; Content Blockers Allow BLOCKLYN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noi-ZB-5Lb">
+                                <rect key="frame" x="0.0" y="433" width="600" height="103"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3f3-1y-S5b" firstAttribute="top" secondItem="K3p-eb-flC" secondAttribute="bottom" constant="8" id="261-qc-0c1"/>
-                            <constraint firstItem="K3p-eb-flC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EMJ-3K-CWt"/>
-                            <constraint firstItem="Noi-ZB-5Lb" firstAttribute="top" secondItem="3f3-1y-S5b" secondAttribute="bottom" id="Idd-Og-bOQ"/>
-                            <constraint firstItem="Noi-ZB-5Lb" firstAttribute="height" secondItem="3f3-1y-S5b" secondAttribute="height" multiplier="1.25" id="In7-Dp-a75"/>
-                            <constraint firstItem="2bG-Lt-mjH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MjY-2c-9ja"/>
-                            <constraint firstItem="3f3-1y-S5b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="OcC-vy-f4x"/>
-                            <constraint firstItem="2bG-Lt-mjH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OsK-Zx-Q9H"/>
-                            <constraint firstItem="Dpu-wJ-BXo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QvG-wZ-RLF"/>
-                            <constraint firstItem="Noi-ZB-5Lb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Wgm-zs-ruX"/>
-                            <constraint firstItem="894-RN-sZw" firstAttribute="top" secondItem="Noi-ZB-5Lb" secondAttribute="bottom" constant="8" id="avK-1M-jB5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="894-RN-sZw" secondAttribute="bottom" constant="20" id="gOK-aJ-E2G"/>
-                            <constraint firstAttribute="trailing" secondItem="Noi-ZB-5Lb" secondAttribute="trailing" constant="20" id="gvu-IE-Iuo"/>
-                            <constraint firstItem="Dpu-wJ-BXo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hlU-2d-3ie"/>
-                            <constraint firstItem="K3p-eb-flC" firstAttribute="top" secondItem="2bG-Lt-mjH" secondAttribute="bottom" constant="8" id="oZU-m4-PSg"/>
-                            <constraint firstAttribute="trailing" secondItem="Dpu-wJ-BXo" secondAttribute="trailing" id="pY2-Eh-nt0"/>
-                            <constraint firstAttribute="trailing" secondItem="3f3-1y-S5b" secondAttribute="trailing" constant="20" id="qvr-CY-70Z"/>
-                            <constraint firstAttribute="trailing" secondItem="894-RN-sZw" secondAttribute="trailing" constant="20" id="rlw-zz-JH0"/>
-                            <constraint firstAttribute="trailing" secondItem="2bG-Lt-mjH" secondAttribute="trailing" constant="20" id="t6T-P9-52x"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dpu-wJ-BXo" secondAttribute="bottom" id="u8g-CI-QLb"/>
-                            <constraint firstItem="K3p-eb-flC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xZE-yg-QsH"/>
+                            <constraint firstItem="2bG-Lt-mjH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="2GN-FY-ADN"/>
+                            <constraint firstItem="2bG-Lt-mjH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="67u-UR-ilc"/>
+                            <constraint firstItem="ZIw-vF-xtD" firstAttribute="top" secondItem="2bG-Lt-mjH" secondAttribute="bottom" constant="8" id="6ec-GQ-X0e"/>
+                            <constraint firstAttribute="trailing" secondItem="Noi-ZB-5Lb" secondAttribute="trailing" id="9kh-Vu-VWB"/>
+                            <constraint firstItem="894-RN-sZw" firstAttribute="top" secondItem="Noi-ZB-5Lb" secondAttribute="bottom" constant="8" id="AN7-jx-DZ8"/>
+                            <constraint firstItem="2bG-Lt-mjH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="BB1-fd-TQt"/>
+                            <constraint firstAttribute="trailing" secondItem="2bG-Lt-mjH" secondAttribute="trailing" constant="20" id="C6g-vT-lca"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="894-RN-sZw" secondAttribute="bottom" constant="20" id="ClK-8h-x1h"/>
+                            <constraint firstAttribute="trailing" secondItem="Dpu-wJ-BXo" secondAttribute="trailing" id="GdX-mY-DAW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Dpu-wJ-BXo" secondAttribute="bottom" id="HBJ-NU-Xxs"/>
+                            <constraint firstItem="ZIw-vF-xtD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JM2-iP-Yqa"/>
+                            <constraint firstItem="Dpu-wJ-BXo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K2b-vt-FBd"/>
+                            <constraint firstItem="Dpu-wJ-BXo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KZn-Fp-gAX"/>
+                            <constraint firstItem="2bG-Lt-mjH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Tfc-C8-k7K"/>
+                            <constraint firstAttribute="trailing" secondItem="2bG-Lt-mjH" secondAttribute="trailing" constant="20" id="Vk4-7v-Djb"/>
+                            <constraint firstItem="ZIw-vF-xtD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ykb-qx-BXS"/>
+                            <constraint firstAttribute="trailing" secondItem="894-RN-sZw" secondAttribute="trailing" constant="20" id="i2y-X1-1dD"/>
+                            <constraint firstItem="Noi-ZB-5Lb" firstAttribute="top" secondItem="ZIw-vF-xtD" secondAttribute="bottom" constant="8" id="mEK-Xl-keu"/>
+                            <constraint firstItem="Noi-ZB-5Lb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rAt-BO-UJh"/>
                         </constraints>
                     </view>
                     <connections>
